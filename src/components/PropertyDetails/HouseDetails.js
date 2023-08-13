@@ -5,13 +5,17 @@ import { useContext } from "react";
 import { useParams } from 'react-router-dom';
 
 import { HouseContext } from "../../context/HouseContext";
+import { housesData } from "../../constant";
+
 
 const HouseDetails = () => {
 
   const {propertyId} = useParams();
   const { houses } = useContext(HouseContext);
 
-  const searchedHouse = houses.find(house=> house.id== propertyId)
+  const searchedHouse = housesData.find(house=> house.id== propertyId);
+
+ 
 
   return (
     <>

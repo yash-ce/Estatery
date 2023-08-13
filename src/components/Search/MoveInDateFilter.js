@@ -3,18 +3,20 @@ import { useContext } from 'react';
 import { HouseContext } from '../../context/HouseContext';
 
 function MoveInDateFilter() {
-    const {houses } = useContext(HouseContext);
+
+    const {setMoveInDate, allDates } = useContext(HouseContext);
 
     const MoveInDateHandler = (event)=> {
-    //   setMoveIndate(event.target.value);
+      setMoveInDate(event.target.value);
     }
 
   
     return (
-      <Select placeholder='select Date' onChange={MoveInDateHandler}>
+      <Select onChange={MoveInDateHandler}>
         {
-          houses.map((house, index)=> 
-            <option key={index}>{house.moveInDate}</option>
+            allDates.map((date, index)=> 
+          
+            <option key={index}>{date}</option>
           )
         }
       </Select>

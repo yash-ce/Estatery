@@ -1,11 +1,12 @@
-import { FormControl, FormLabel, Select } from "@chakra-ui/react";
+import { Select } from "@chakra-ui/react";
 import { useContext } from "react";
 import { HouseContext } from "../../context/HouseContext";
 
 const PriceFilter = () => {
-  const { setPrice } = useContext(HouseContext);
+  const { setPrice} = useContext(HouseContext);
 
   const prices = [
+    { value: "10000 - 20000" },
     { value: "20000 - 30000" },
     { value: "30000 - 40000" },
     { value: "40000 - 50000" },
@@ -21,7 +22,7 @@ const PriceFilter = () => {
   
 
   return (
-    <Select placeholder="select price" onChange={priceHandler}>
+    <Select placeholder="Select Price" onChange={priceHandler}>
       {prices.map((price, index) =>
           <option key={index}>{price.value}</option>
         )

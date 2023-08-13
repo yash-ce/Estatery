@@ -1,5 +1,6 @@
 import { Text, Center} from '@chakra-ui/react';
 
+
 const Footer = () => {
   return (
     <>

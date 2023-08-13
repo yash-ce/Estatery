@@ -11,7 +11,7 @@ const PropertyTypeFilter = () => {
   }
 
   return (
-    <Select placeholder='select type' onChange={propertyTypeHandler}>
+    <Select  onChange={propertyTypeHandler}>
       {
         properties.map((type, index)=> 
           <option key={index}>{type}</option>

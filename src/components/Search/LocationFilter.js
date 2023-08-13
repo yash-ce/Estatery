@@ -4,14 +4,14 @@ import { HouseContext } from '../../context/HouseContext';
 
 const LocationFilter = () => {
 
-  const {setCountry, countries } = useContext(HouseContext);
+  const {setCountry, countries} = useContext(HouseContext);
 
   const locationHandler = (event)=> {
     setCountry(event.target.value);
   }
 
   return (
-    <Select placeholder='select country' onChange={locationHandler}>
+    <Select onChange={locationHandler}>
       {
         countries.map((country, index)=> 
           <option key={index}>{country}</option>

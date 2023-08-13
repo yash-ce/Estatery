@@ -58,12 +58,6 @@ import Agent10 from './assets/images/agents/agent10.png';
 import Agent11 from './assets/images/agents/agent11.png';
 import Agent12 from './assets/images/agents/agent12.png';
 
-export const bannerData = [
-  {1200: 'Premium Product'}, 
-  {4500: 'Happy Customer'}, 
-  {'240': 'Award Winning'}
-]
-
 
 export const housesData = [
   {
