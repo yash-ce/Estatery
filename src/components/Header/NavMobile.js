@@ -24,7 +24,7 @@ const NavMobile = () => {
                 <DrawerBody px='14' mt='4'>
                     <VStack as='nav' spacing='8' alignItems='left'>
                         {
-                            ['Rent', 'Buy', 'Sell', 'Manege Property', "Resourses"].map((item)=>(
+                            ['Rent', 'Buy', 'Sell', 'Manage Property', "Resources"].map((item)=>(
                                 <Button variant='link' key={item}>{item}</Button>
                             ))
                         }

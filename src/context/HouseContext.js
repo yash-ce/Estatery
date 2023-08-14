@@ -32,10 +32,11 @@ const HouseProvider = ({children}) =>{
     }, []);
 
     useEffect(() => {
-        const allmoveInDates = houses.map(house=>{
+        const allmoveInDates = housesData.map(house=>{
+            console.log(house, house.moveInDate);
             return house.moveInDate;
         })
-        const uniqueMoveInDates = ['Select Date', ...new Set(allmoveInDates)];
+        const uniqueMoveInDates = [ ...new Set(allmoveInDates)];
         setAllDates(uniqueMoveInDates);
     }, []);
 

@@ -17,7 +17,7 @@ const Header = () => {
           <>
             <ButtonGroup as='nav' variant='ghost' spacing='5' isActive>
                 {
-                  ['Rent', 'Buy', 'Sell', 'Manege Property', 'Resourses'].map((item)=>(
+                  ['Rent', 'Buy', 'Sell', 'Manage Property', 'Resources'].map((item)=>(
                     <Link to={"/rent"}><Button fontSize='16px' key={item}>{item}</Button></Link>
                     ))
                 }

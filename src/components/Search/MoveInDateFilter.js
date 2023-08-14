@@ -12,9 +12,9 @@ function MoveInDateFilter() {
 
   
     return (
-      <Select onChange={MoveInDateHandler}>
+      <Select placeholder='Select Date' onChange={MoveInDateHandler}>
         {
-            allDates.map((date, index)=> 
+            allDates.sort().map((date, index)=> 
           
             <option key={index}>{date}</option>
           )
